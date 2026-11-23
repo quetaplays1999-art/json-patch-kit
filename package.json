@@ -1,0 +1,54 @@
+{
+  "name": "json-patch-kit",
+  "version": "1.0.0",
+  "description": "Zero-dependency RFC 6901 JSON Pointer, RFC 6902 JSON Patch, diff generator, and RFC 7396 JSON Merge Patch CLI and ESM library.",
+  "type": "module",
+  "license": "MIT",
+  "author": "quetaplays1999-art",
+  "homepage": "https://github.com/quetaplays1999-art/json-patch-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quetaplays1999-art/json-patch-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quetaplays1999-art/json-patch-kit/issues"
+  },
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./pointer": "./src/pointer.js",
+    "./patch": "./src/patch.js"
+  },
+  "bin": {
+    "json-patch-kit": "./bin/json-patch-kit.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "keywords": [
+    "json-patch",
+    "json-pointer",
+    "json-merge-patch",
+    "rfc6901",
+    "rfc6902",
+    "rfc7396",
+    "diff",
+    "json",
+    "cli",
+    "esm",
+    "zero-dependency"
+  ]
+}
